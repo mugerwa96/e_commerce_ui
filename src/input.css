@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.link{
+    @apply flex items-center space-x-2 p-2 font-semibold
+    hover:bg-slate-600
+}
