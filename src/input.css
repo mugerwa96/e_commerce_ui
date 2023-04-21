@@ -7,3 +7,18 @@
     @apply flex items-center space-x-2 p-2 font-semibold
     hover:bg-slate-600
 }
+
+.form-button{
+    @apply flex items-center justify-center gap-2 px-3 py-2 font-semibold 
+    text-white transition-all duration-700 border rounded bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-600
+}
+.form-control{
+    @apply block md:py-3 mb-4 md:text-xl text-gray-500 transition-all border border-gray-200 rounded focus:ring-purple-800 focus:border-purple-800 active:border-purple-800 placeholder:text-gray-500
+}
+.form-link{
+    @apply font-semibold text-purple-700 capitalize md:text-xl
+}
+
+.form-check{
+    @apply border-2 border-purple-800 md:py-3 md:px-3 focus:border-purple-800 active:border-purple-800 focus:ring-purple-800
+}
