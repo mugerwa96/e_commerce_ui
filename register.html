@@ -9,8 +9,8 @@
 </head>
 
 <body class="bg-slate-200">
-         <!-- header__section -->
-         <header class="fixed z-10 w-full p-4 bg-slate-800 md:p-2" x-data="{mobileMenuOpen:false}">
+           <!-- header__section -->
+           <header class="fixed z-10 w-full p-4 bg-slate-800 md:p-2" x-data="{mobileMenuOpen:false}">
             <!-- flex__container -->
             <div class="relative flex justify-between md:justify-around md:items-center ">
               <!-- left__side -->
@@ -418,145 +418,88 @@
           <!-- header__section -->
     
 
- <!-- cart__section -->
- <div class="absolute w-full p-4 my-10 space-y-4">
-     
-    <div class="md:flex md:justify-center md:space-y-4">
-       
-        <div class=" md:w-[60%] md:justify-center">
-            
-            <h1 class="text-2xl font-bold text-slate-900 md:text-3xl md:my-3">My Orders</h1>
-            <!-- cart__items -->
-            <div class="p-2 my-3 overflow-x-scroll bg-white border border-gray-200 rounded shadow-md ">
-              
-                <table class="w-full table-auto">
-                    <thead>
-                      <tr class="p-4 border-b-2">
-                        <th class="px-4 py-2 text-sm "   >Order_ID</th>
-                        <th class="hidden px-4 py-2 text-sm md:block">Date</th>
-                        <th class="px-4 py-2 text-sm">Sub_Total</th>
-                        <th class="px-4 py-2 text-sm">Status</th>
-                        <th class="px-4 py-2 text-sm" >Action</th>
-                      </tr>
-                    </thead>
-                    <tbody class="p-4">
-                        <tr class="" >
-                            <td class="text-sm md:p-4 md:text-base " >#123</td>
-                            <td class="hidden p-4 text-sm md:text-base md:block">10th May:2023</td>
-                             <td class="text-sm md:p-4 md:text-base ">Ugx:1,000,000</td>
-                            <td class="md:p-4">
-                                <span class="px-2 py-1 text-white bg-gray-400 rounded">Unpaid</span>
-                            </td>
-                          
-                            <td class="md:p-4">
-                                <span class="flex items-center justify-center px-2 py-1 text-white rounded bg-emerald-500">
-                                    <span class="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
-                                        </svg>
-        
-                                    </span>
-                                    <span class="order_details.html">View_Invoice</span>
-                                </span>
-                            </td>
-                           
-                            <td  class="space-x-4 md:p-2" >
-                                <span class="flex items-center justify-center px-2 py-1 text-white bg-purple-500 rounded">
+
+
+    <div class="absolute w-full p-4 my-10 space-y-4 ">
+
+        <div class="my-5 md:flex md:justify-center md:space-y-4">
+
+            <div class=" md:w-[60%] md:justify-center ">
+
+                <h1 class="mb-4 text-xl font-bold text-center text-slate-900 md:text-3xl md:my-3">Create new account
+                </h1>
+                <p class="text-center md:text-xl">
+                    <span>
+                        or
+                    </span>
+                    <span class="form-link">
+                        <a href="login.html">
+
+                            login with existing one
+
+                        </a>
+                    </span>
+                </p>
+                <form>
+                    <div class="p-4 md:flex md:justify-center">
+
+                        <!-- login__form__container -->
+                        <div class="flex flex-col justify-center md:w-[60%]">
+
+                            <input type="text" name="" placeholder="Your Name" class="form-control" id="">
+                            <input type="text" name="" placeholder="Your Email" class="form-control" id="">
+
+                            <input type="password" name="" placeholder="Password" class="form-control" id="">
+                            <input type="password" name="" placeholder="Repeat Password" class="form-control" id="">
+
+                            <!-- flex__container -->
+                            <div class="flex items-center justify-between my-4">
+                                <!-- left__side -->
+                                <div class="flex items-center gap-4">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
-                                        </svg>
-        
+
+                                        <input type="checkbox" name="" id=""
+                                            class="border-2 border-purple-800 md:py-3 md:px-3 focus:border-purple-800 active:border-purple-800 focus:ring-purple-800">
                                     </span>
-                                    <span class="">Pay</span>
-                                </span>
-                            </td>
-                        </tr>
-                        <tr class="" >
-                            <td class="text-sm md:p-4 md:text-base " >#123</td>
-                            <td class="hidden p-4 text-sm md:text-base md:block">10th May:2023</td>
-                             <td class="text-sm md:p-4 md:text-base ">Ugx:1,000,000</td>
-                            <td class="md:p-4">
-                                <span class="px-2 py-1 text-white bg-green-400 rounded">Paid</span>
-                            </td>
-                          
-                            <td class="md:p-4">
-                                <span class="flex items-center justify-center px-2 py-1 text-white rounded bg-emerald-500">
-                                    <span class="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
-                                        </svg>
-        
+                                    <span class="font-semibold md:text-xl text-slate-800">
+                                        Remember Me
                                     </span>
-                                    <span class="">View_Invoice</span>
-                                </span>
-                            </td>
-                           
-                            <td  class="space-x-4 md:p-2" >
-                                <span class="flex items-center justify-center px-2 py-1 text-white bg-purple-500 rounded">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
-                                        </svg>
-        
+                                </div>
+
+                                <!-- right__side -->
+                                <div>
+                                    <span class="form-link">
+                                        <a href="reset.html">
+
+                                            Reset your password
+                                        </a>
                                     </span>
-                                    <span class="">Pay</span>
+                                </div>
+                            </div>
+                            <button type="submit" class="form-button">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+                                    </svg>
+
                                 </span>
-                            </td>
-                        </tr>
-                        <tr class="" >
-                            <td class="text-sm md:p-4 md:text-base " >#123</td>
-                            <td class="hidden p-4 text-sm md:text-base md:block">10th May:2023</td>
-                             <td class="text-sm md:p-4 md:text-base ">Ugx:1,000,000</td>
-                            <td class="md:p-4">
-                                <span class="px-2 py-1 text-white bg-orange-400 rounded">Pending</span>
-                            </td>
-                          
-                            <td class="md:p-4">
-                                <span class="flex items-center justify-center px-2 py-1 text-white rounded bg-emerald-500">
-                                    <span class="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
-                                        </svg>
-        
-                                    </span>
-                                    <span class="">View_Invoice</span>
+                                <span>
+                                    Signup
                                 </span>
-                            </td>
-                           
-                            <td  class="space-x-4 md:p-2" >
-                                <span class="flex items-center justify-center px-2 py-1 text-white bg-purple-500 rounded">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
-                                        </svg>
-        
-                                    </span>
-                                    <span class="">Pay</span>
-                                </span>
-                            </td>
-                        </tr>
-                  
-                    </tbody>
-                  </table>
+                            </button>
+
+                        </div>
+
+
+                    </div>
+                </form>
             </div>
         </div>
+
     </div>
-       
-</div>
- 
+
 
 
 </body>
