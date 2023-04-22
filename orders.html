@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./dist/output.css" rel="stylesheet">
     <script defer src="./alpine.min.js"></script>
+    <style>
+        [x-cloak] { display: none !important; }
+    </style>
 </head>
+
 
 <body class="bg-slate-200">
          <!-- header__section -->
-         <header class="fixed z-10 w-full p-4 bg-slate-800 md:p-2" x-data="{mobileMenuOpen:false}">
+         <header class="fixed z-10 w-full p-4 bg-slate-800 md:p-2" x-cloak x-data="{mobileMenuOpen:false}">
             <!-- flex__container -->
             <div class="relative flex justify-between md:justify-around md:items-center ">
               <!-- left__side -->
